@@ -588,7 +588,10 @@ function renderDoubanCards(data, container) {
       const originalCoverUrl = item.cover;
 
       // 2. 也准备代理URL作为备选
-      const proxiedCoverUrl = PROXY_URL + encodeURIComponent(originalCoverUrl);
+      const proxiedCoverUrl = originalCoverUrl.replace(
+        /img\d+\.doubanio\.com/g,
+        "img.doubanio.cmliussss.com"
+      );
 
       // 为不同设备优化卡片布局
       card.innerHTML = `
