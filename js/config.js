@@ -220,7 +220,7 @@ const PLAYER_CONFIG = {
 
 // 弹幕API配置
 const DANMAKU_CONFIG = {
-  defaultApiUrl: "", // 默认弹幕API地址（空值，需要用户自行配置）
+  defaultApiUrl: "https://danmuapi.acacia-ma.com/danmuapi-Acacia_Ma/api/v2/douban", // 默认弹幕API地址（空值，需要用户自行配置）
   storageKey: "danmakuApiUrl", // localStorage存储键名
 };
 
